@@ -1,0 +1,63 @@
+.loading
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+svg
+{
+   width: 25em;
+   transform-origin: center;
+   animation: rotate4 1s circle infinite;
+}
+
+circle
+{
+  fill: none;
+  stroke:rgb(60, 47, 233);
+  stroke-width: 100px;
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  stroke-linecap: circle;
+  border-radius: 50px;
+  animation: dash4 3s ease-in-out infinite;
+}
+
+@keyframes rotate4
+{
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash4
+{
+  0%
+  {
+    stroke-dasharray: 1,0;
+    stroke-dashoffset: 0;
+  }
+  50%
+  {
+    stroke-dasharray: 90,200;
+    stroke-dashoffset: -35;
+  }
+  100%
+  {
+     stroke-dashoffset: -124px;
+  }
+}
+  
+
+
+
+
+
+
+
+
+
+
